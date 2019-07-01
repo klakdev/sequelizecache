@@ -9,7 +9,7 @@ async function scrapeData(skip, size){
             url: 'https://www.kaggleusercontent.com/services/datasets/kaggle.dataview.v1.DataViewer/GetDataView',
             body: JSON.stringify({
                 jwe: {
-                    encryptedToken: "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..X5SbBnoEyir7T4UMSobqTA.5mUXzRV8LFb-22BnZpWUEdf6igKFgZGy-8AghIPUH563v0ScqhyQzGxCbCRLcIkjIWBR7jL3-mOlxTsKLNTs8gdsCwE4yMQK11ZbMaTCtvgZactecafYW-ok9ni_kwBwQmoBXbhPP4XDaLEvABqr0uyg2TEZqF2iHNNzUlctbOVbVgE3E0Bsb4Z3VYPIcGgqlIMCKjUB5cR1v-2Ur0XfT6KNkxxXs5JYBFQy_NaEpjwatAOWw20PEoPHXQ_GQFPRS5gRz41FAGtNla_sYh0_JGakkN5KjZV-bNqhHz6fgmpysQrHUK6Rbjxeeo3TYg42KK61VjslEAFa4kYPV-NPekd5Xp_GppBQyJFw1blSbMHQw6ic5on9Fzm6_AHAZ3PXqDTKDGVZFeRSh4tcO7BbQfJyoySLPEpyq5UISXsJZiPhz0LPjUl5Ha2TCWoU0o4jj6HMR2Ke5Au0PIAO7EjDF1WYi2pALcFqkJ2C3BXFuoaYzKJZP0PIgX4SJ9hFlVwaWDRK4wALd7i_LCx6PohKMG1Hrl7RgaflDZkIQyVw6WUGyI8lTsIqAamOO0uGW47hIg4NYnNeEKq8edUZZDa0yHNGptModWyUeRD3Zq8Us-sJtycKtIMBo6K7MbcWUJh0.E-bPHDltyl5s-MvDZoF1LA"
+                    encryptedToken: "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..t723WNxIBhhv6CqacVbF8A.KRSZ45JrV5Qj_YmjCo55D1kGF6RwcOJQxZY93h_fNf8Cmm2lKJ9DXMaqp-sgBBhGM-3SPnEEl3o8tl9Pq1pvSgOAuVM0TQt_GvuZgoadWmBTPd5NI_Do02MZvrBdR15025qnTOauAqL-5_Sh0Ee-OKAItNCjoHVfjZBA-bUEAU-bhq46QElA_Ty02UJgeziqazEtL_MGac0Y1siMzA3UZZHoUOAgR2Sfme5UurUYsb7XTjZ74cAdD-H4tNt8qGvWGONTKlqwFX4d6_yhjvhoKgHUyytYKrtfnAtQbF6HB1hYLqY9FyDo3mC5jlNRHoBtTZxNBDgkxLOmbx7AC6bmbtiIbeLC7m1P74i-t-XnNMBSGdX8vxg4DiVVLufPHcC1t-EOpWA6g92mZHjuEqb2WYxSiQEdjAaMGjGHdwyq8RHr9HKsWq0wWCGJD5XZkja-luQboMLdDdJfe5DC8xcRFuOwkf6MZ61DQZYyskUbrdy4esAkQ4gNE0z5AY0gfktuFVkd1SKA6pZPI73UdYJ0qk2vhpOEcPd14QPA6eO12C1SqRRWoRppcvs7Rnj-7baPzi3CadHDwX7CLQ7rxRUgo9gKTnImEn230LutF8CPy4nQ2xjkd4ajTzxjb3dNs1Ed.UTCz1Qvc39dZizbwg3_drA"
                 },
                 source: {
                     type: 3,
@@ -58,7 +58,7 @@ async function nextPortion(skip, size){
 }
 
 async function main(){
-    let skip = 652000, size = 1000, done = 0, total = 0;
+    let skip = 2508000 , size = 1000, done = 0, total = 0;
     do{
         let [totalRows, inserted] = await nextPortion(skip, size);
         done += inserted;

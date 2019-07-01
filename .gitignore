@@ -116,3 +116,7 @@ typings/
 .next
 
 .idea/
+
+
+#dev directories
+scrape/*
